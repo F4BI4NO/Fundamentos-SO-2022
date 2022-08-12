@@ -1,0 +1,416 @@
+@charset "UTF-8";
+
+/* ========== IMPORTS ========== */
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* ========== RESETS ========== */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ========== FORMATAÇÃO DO BODY ========== */
+body {
+	background-color: #dddddd;
+}
+
+/* ========== FORMATAÇÃO DO CABEÇALHO ========== */
+header {
+	background-color: #ffffff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+}
+
+/* PARTE 1 */
+.cabp1 {
+	background-color: #00A3FF; /* Tom de azul */
+	padding: 10px;
+}
+
+/* Menu */
+.usr {
+	display: inline-block;
+}
+
+.usr ul {
+
+}
+
+.usr ul li {
+	display: inline-block;
+	font-size: 18pt;
+	font-family: 'Righteous', cursive;
+	color: white;
+}
+
+.usr ul li:hover > ul {
+	display: block;
+}
+
+/* Submenu */
+.usr ul li ul {
+	position: absolute;
+	display: none;
+	background-color: #ffffff;
+}
+
+.usr ul li ul li {
+	display: block;
+	padding: 0px 4px 4px 4px;
+	margin: 0px;
+}
+
+.usr ul li ul li a {
+	font-family: 'Arial', sans-serif;
+	font-size: 12pt;
+	color: grey;
+}
+
+.usr ul li ul li a:hover {
+	color: #00A3FF;
+}
+
+.pub {
+	display: inline-block;
+	font-size: 9pt;
+	font-family: 'Righteous', cursive;
+	color: white;
+}
+
+/* Redes */
+.redes {
+	float: right;
+}
+
+.redes ul li {
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.redes ul li:hover {
+	filter: contrast(175%) brightness(3%);
+}
+
+/* PARTE 2 */
+.cabp2 {
+	padding: 10px;
+	padding: 20px 10px 20px 10px;
+	text-align: right;
+	background: url("../_imagens/Logo-Animal_Support.png") no-repeat 5px 50%;
+}
+
+.cabp2 ul {
+	
+}
+
+.cabp2 ul li {
+	display: inline-block;
+	margin: 10px;
+}
+
+.cabp2 ul li a {
+	font-family: 'Righteous', cursive;
+	color: grey;
+}
+
+.cabp2 ul li a:hover {
+	color: #00A3FF;
+	border-bottom: 4px solid #00A3FF;
+}
+
+/* Botão */
+.cabp2 button {
+	padding: 10px;
+	margin-right: 20px;
+	border: none;
+	background-color: #00A3FF;
+	color: #ffffff;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.4);
+	display: none;
+}
+
+.cabp2 ul.menbtn {
+	position: absolute;
+	display: none;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	background-color: rgba(0,0,0,.8);
+	text-align: center;
+	padding: 50px 20px 20px 20px;
+}
+
+.cabp2 ul.menbtn li {
+	display: block;
+	width: 100%;
+}
+
+.cabp2 ul.menbtn li a {
+	color: #ffffff;
+	font-size: 14pt;
+}
+
+.cabp2 ul.menbtn li a:hover {
+	border: 2px solid #00A3FF;
+	padding: 4px 50px 4px 50px;
+}
+
+.cabp2 ul.menbtn li#btn {
+	margin-top: 50px;
+}
+
+.cabp2 ul.menbtn li a.btn-close:hover {
+	border: none;
+	border: 0px;
+	padding: 0px;
+	color: #00A3FF;
+}
+
+/* ========== AJUSTE PARA TELA DE CLL ========== */
+@media (max-width: 576px) {
+	/* Menu do Cabeçalho */
+	.cabp2 ul {
+		display: none;
+	}
+
+	.cabp2 button {
+		display: inline-block;
+	}
+
+	/* Informações Bancárias */
+	.article#doac img {
+		padding: 10px 50px 10px 50px
+	}
+}
+
+/* ========== fORMATAÇÃO DA PAG DE ENTRAR E CADASTRO ========== */
+.bd-ent-cad {
+	background-color: #ffffff;
+}
+
+.corp-ent-cad {
+	width: 40%;
+	height: 80%;
+	position: absolute;
+	display: block;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.form-ent-cad {
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	margin: auto;
+	margin-top: 80px;
+}
+
+.form-ent-cad input {
+	position: relative;
+	width: 90%;
+	margin: 10px 0px 10px 0px;
+	padding: 5px 0px 5px 0px;
+	border-radius: 2px;
+}
+
+.form-ent-cad input#btn {
+	position: relative;
+	width: 40%;
+	margin: 10px 0px 10px 0px;
+	border-radius: 5px;
+}
+
+.corp-ent-cad img {
+	margin-bottom: 20px;
+}
+
+.form-ent-cad input.ld {
+	width: 45%;
+}
+
+.form-ent-cad input.cntr {
+	width: 92%;
+}
+
+.form-ent-cad input.btncad-ent {
+	border-radius: 5px;
+	margin-top: 20px;
+	width: 30%;
+}
+
+.form-ent-cad input.btncad-cad {
+	border-radius: 5px;
+	margin-top: 20px;
+	width: 40%;
+}
+
+/* ========== FORMATAÇÃO DOS POSTS ========== */
+.cont {
+	padding: 10px;
+}
+
+.article {
+	background-color: #ffffff;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.9);
+	width: 75%;
+	display: block;
+	padding: 10px;
+	border: 1px dashed black;
+	display: inline-block;
+	margin: 0px;
+}
+
+.article h1 {
+	padding: 5px 0px 5px 0px;
+}
+
+.article img {
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+.article div {
+	border-bottom: 1px dashed black;
+	margin-bottom: 30px;
+}
+
+.article div#feed {
+	border: 1px dashed black;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	padding: 8px;
+}
+
+.article p {
+	padding: 5px 5px 5px 0px;
+}
+
+.article .caracts {
+	text-align: center;
+	border: none;
+	margin: 0px;
+}
+
+.article .caracts p {
+	display: inline-block;
+	margin: 10px;
+}
+
+.article#doac {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.article#doac p {
+	text-align: justify;
+}
+
+.article#doac h2 {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.article#doac div {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.article#doac img {
+	width: 30%;
+	display: inline-block;
+}
+
+.article div.btn-apg {
+	border: none;
+	margin: 0px;
+}
+
+.article div.status {
+	text-align: center;
+	border: none;
+	background-color: #00A3FF;
+	border-radius: 10px;
+	margin: 0px 0px 5px 0px;
+}
+
+.article div.status h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* ========== FORMATAÇÃO DA LATERAL ========== */
+.lateral {
+	width: 15%;
+	display: inline-block;
+	float: right;
+	margin: 0px;
+	text-align: center;
+}
+
+.lateral .apoiadores {
+	margin: 0px 0px 10px 0px;
+}
+
+/* ========== FORMATAÇÃO DAS PÁGINAS DE PUB ========== */
+.article#forms-pub {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+.article#forms-pub form {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article#forms-pub form input {
+	margin: 10px 0px 10px 0px;
+	width: 90%;
+}
+
+.article#forms-pub form textarea {
+	margin: 10px;
+	width: 90%;
+}
+
+.article#forms-pub form input#button-pub {
+	margin: 10px;
+	width: 25%;
+	margin-left: 65%;
+}
+
+.article#forms-pub form input.lad {
+	width: 45%;
+}
+
+.article#forms-pub form textarea#txta-feed {
+	margin: 10px;
+	width: 85%;
+}
+
+.article#forms-pub form input.cx-grande {
+	width: 91%;
+}
+
+.btn-del {
+	width: 50%;
+	margin-top: 100px;
+}
